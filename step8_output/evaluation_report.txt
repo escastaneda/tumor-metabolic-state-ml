@@ -1,0 +1,67 @@
+STEP 8 - MODEL EVALUATION REPORT
+============================================================
+Test set: 231 patients
+Classes: ['Glycolytic', 'Mixed', 'Oxidative']
+
+========================================
+Model: Logistic Regression
+  Test Accuracy: 0.7706
+  Test F1 Macro: 0.7705
+  Per-class F1:
+    Glycolytic: 0.8481
+    Mixed:      0.6581
+    Oxidative:  0.8054
+
+  Classification Report:
+              precision    recall  f1-score   support
+
+  Glycolytic       0.83      0.87      0.85        77
+       Mixed       0.65      0.66      0.66        77
+   Oxidative       0.83      0.78      0.81        77
+
+    accuracy                           0.77       231
+   macro avg       0.77      0.77      0.77       231
+weighted avg       0.77      0.77      0.77       231
+
+
+========================================
+Model: Random Forest
+  Test Accuracy: 0.6926
+  Test F1 Macro: 0.6882
+  Per-class F1:
+    Glycolytic: 0.7436
+    Mixed:      0.5556
+    Oxidative:  0.7654
+
+  Classification Report:
+              precision    recall  f1-score   support
+
+  Glycolytic       0.73      0.75      0.74        77
+       Mixed       0.60      0.52      0.56        77
+   Oxidative       0.73      0.81      0.77        77
+
+    accuracy                           0.69       231
+   macro avg       0.69      0.69      0.69       231
+weighted avg       0.69      0.69      0.69       231
+
+
+========================================
+Model: SVM
+  Test Accuracy: 0.7489
+  Test F1 Macro: 0.7509
+  Per-class F1:
+    Glycolytic: 0.8133
+    Mixed:      0.6500
+    Oxidative:  0.7895
+
+  Classification Report:
+              precision    recall  f1-score   support
+
+  Glycolytic       0.84      0.79      0.81        77
+       Mixed       0.63      0.68      0.65        77
+   Oxidative       0.80      0.78      0.79        77
+
+    accuracy                           0.75       231
+   macro avg       0.75      0.75      0.75       231
+weighted avg       0.75      0.75      0.75       231
+

@@ -1,0 +1,38 @@
+STEP 9 - HYPERPARAMETER TUNING REPORT
+============================================================
+
+LOGISTIC REGRESSION TUNING
+  Best params:   {'C': 0.1, 'max_iter': 2000, 'penalty': 'l2', 'solver': 'lbfgs'}
+  Best CV F1:    0.8034
+  Test Accuracy: 0.7792
+  Test F1 Macro: 0.7808
+  Per-class F1: Glycolytic=0.8387 Mixed=0.6792 Oxidative=0.8243
+
+              precision    recall  f1-score   support
+
+  Glycolytic       0.83      0.84      0.84        77
+       Mixed       0.66      0.70      0.68        77
+   Oxidative       0.86      0.79      0.82        77
+
+    accuracy                           0.78       231
+   macro avg       0.78      0.78      0.78       231
+weighted avg       0.78      0.78      0.78       231
+
+
+SVM TUNING
+  Best params:   {'C': 0.1, 'gamma': 'scale', 'kernel': 'linear'}
+  Best CV F1:    0.8126
+  Test Accuracy: 0.8225
+  Test F1 Macro: 0.8209
+  Per-class F1: Glycolytic=0.8750 Mixed=0.7248 Oxidative=0.8627
+
+              precision    recall  f1-score   support
+
+  Glycolytic       0.84      0.91      0.88        77
+       Mixed       0.75      0.70      0.72        77
+   Oxidative       0.87      0.86      0.86        77
+
+    accuracy                           0.82       231
+   macro avg       0.82      0.82      0.82       231
+weighted avg       0.82      0.82      0.82       231
+

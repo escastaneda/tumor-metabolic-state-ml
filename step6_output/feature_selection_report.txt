@@ -1,0 +1,33 @@
+STEP 6 - FEATURE SELECTION REPORT
+============================================================
+Original RNA-seq genes:       72
+Original methylation sites:   335,049
+Total original features:      335,121
+
+After ANOVA filter:
+  RNA kept (all):             72
+  Methylation kept (top):     500
+
+After Random Forest filter:
+  RNA features:               72
+  Methylation features:       428
+  Total final features:       500
+
+Dimensionality reduction:     99.9% removed
+
+Top 15 features by RF importance:
+  RNA_RNA_NDUFB1                                0.03099
+  RNA_RNA_NDUFA1                                0.03002
+  RNA_RNA_NDUFA4                                0.02594
+  RNA_RNA_NDUFB2                                0.02337
+  RNA_RNA_COX6A1                                0.02121
+  RNA_RNA_COX6B1                                0.02097
+  RNA_RNA_NDUFA3                                0.01937
+  RNA_RNA_COX7A2                                0.01728
+  RNA_RNA_NDUFA5                                0.01621
+  RNA_RNA_NDUFB6                                0.01617
+  RNA_RNA_NDUFA2                                0.01597
+  RNA_RNA_NDUFB3                                0.01596
+  RNA_RNA_NDUFB5                                0.01515
+  RNA_RNA_NDUFA7                                0.01332
+  RNA_RNA_NDUFB4                                0.01089

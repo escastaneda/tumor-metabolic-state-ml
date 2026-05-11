@@ -1,0 +1,4 @@
+model,cv_accuracy,cv_accuracy_std,cv_f1_macro,cv_f1_std,train_accuracy
+Logistic Regression,0.7914,0.0377,0.7921,0.0349,1.0
+SVM,0.7336,0.0345,0.7352,0.0311,0.9236
+Random Forest,0.6629,0.0312,0.6622,0.028,0.98
