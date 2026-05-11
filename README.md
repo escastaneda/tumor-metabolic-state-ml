@@ -1,17 +1,17 @@
 # Predicting Tumor Metabolic State from Multi-Omic Biological Data
 
 **Authors:** Emmily Castaneda & Joshua Streat  
-**Course:** ECE / ML Final Project — Virginia Tech  
+**Course:** CS4824 / ML Final Project: Virginia Tech  
 **Dataset:** TCGA Pan-Cancer Atlas (2018) via UCSC Xena Browser  
 
 ---
 
 ## Overview
 
-This project develops a supervised machine learning pipeline to classify breast cancer (BRCA) tumor samples into three metabolic states — **Glycolytic**, **Oxidative**, and **Mixed** — using multi-omic molecular data (RNA-seq gene expression + DNA methylation).
+This project develops a supervised machine learning pipeline to classify breast cancer (BRCA) tumor samples into three metabolic states : **Glycolytic**, **Oxidative**, and **Mixed**  using multi-omic molecular data (RNA-seq gene expression + DNA methylation).
 
-**Best model:** Tuned SVM — 82.25% test accuracy, 0.821 F1 macro  
-**External validation:** GSE45827 (GEO, n=155) — 80.0% accuracy, 0.806 F1 macro  
+**Best model:** Tuned SVM: 82.25% test accuracy, 0.821 F1 macro  
+**External validation:** GSE45827 (GEO, n=155): 80.0% accuracy, 0.806 F1 macro  
 **Biological validation:** 56.9% of selected RNA features match known metabolic biomarkers  
 
 ---
@@ -126,26 +126,26 @@ py -3.8-64 step13_external_validation.py
 
 ```
 TCGA Pan-Cancer Atlas (RNA-seq + Methylation)
-                ↓
+                v
         Filter to BRCA primary tumors
-                ↓
+                v
     Quality Control & Normalization
-                ↓
+                v
     Label Assignment (Glycolytic / Mixed / Oxidative)
     via ssGSEA-style metabolic gene set scoring
-                ↓
+                v
     Two-Stage Feature Selection
     ANOVA F-test → Random Forest Importance
     335,121 features → 500 features
-                ↓
+                v
     Train 3 Classifiers (LR, RF, SVM)
     5-fold Stratified Cross-Validation
-                ↓
+                v
     Hyperparameter Tuning (GridSearchCV)
-                ↓
+                v
     Best Model: Tuned SVM (linear kernel)
     Test Accuracy: 82.25% | F1 Macro: 0.821
-                ↓
+                v
     Biological + External Validation
 ```
 
